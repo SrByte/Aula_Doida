@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Aula_Doida", "Aula_Doida.dtproj", "{047DC3A0-9F28-28B6-9A4F-1E0BFEFEF6D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047DC3A0-9F28-28B6-9A4F-1E0BFEFEF6D9}.Development|Default.ActiveCfg = Development
+		{047DC3A0-9F28-28B6-9A4F-1E0BFEFEF6D9}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8F1A59E-84B9-4753-9B89-2325873AC096}
+	EndGlobalSection
+EndGlobal
