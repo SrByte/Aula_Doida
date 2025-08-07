@@ -26,26 +26,27 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">CUSCO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgh6yE8X9oUqhpSRJhiaahwAAAAACAAAAAAAQZgAAAAEAACAAAADYmUBaruxE+EcX8DiOvxQT6ZNhMfiHtsiVBRxZfJ+IwAAAAAAOgAAAAAIAACAAAAAZK4cQZepLQBhFZ3GWMfjgiLr6X4H0GBHMJf6Ep344u5AAAAA9O4o5wRJ65ITqU0BVCq2b3KfY1tkD2+6JkEaK5PkpAT4fWImJKzIum4FoPz4PaEd0PgtDjYy+jiou+/9NiZ5Cnv7ZqZHLHl+2C2VSCfpAP3wkMz5zJgjpu72vYBt8LV9Q36zJ7bN6Ddq3O+mK9dZYz+i7J4l7xZhp5i8nk2yDdpK5T1Ho2vYU51uct2K7VYxAAAAAzqJFnweogFooahMOQrkWZwgpOrKWpf4rGUZ8jhZMJ0mGVeYLVVEoOOw+BVo0rUf3jY0kgbYgFAhHBTDwxMXPvw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgh6yE8X9oUqhpSRJhiaahwAAAAACAAAAAAAQZgAAAAEAACAAAACyvWgEJNTuxPQlQIYCQJNS8a2c1gz1prREOjuXk4nL1AAAAAAOgAAAAAIAACAAAACTKhZXrqFZcZjX08oyduplOUh81FP9s0k0OBemybLM55AAAAD+eEdr3r12tAsLj4T0DYjFw/enBQGupSvlluHAZ5qTXo2jRBs88W/QQetuFLAdMlAIM4Ah1J9JMDsibTyOyDPUR8KIKtElGnzLwJ0bGRe581u3mFw5J1daIQFn+nqG7BE45sflFmEY3HzLRekOhFkZpkUpZz5P8JsMWtV3greS62W+szxwMJvCBOkd4X6mhQZAAAAAWzPPXCBb6Ao8+Zs7HiPbRtlwPuontx4k4OG6UwxnDBHqT69u98mYxP17B43nU+cUiL+nlzbqTjfR1qgMzWDntg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Carga Tabela 5DB.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="1.Carga Tabela 5DB.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="2.Origem x Destino Excel.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Carga Tabela 5DB.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="1.Carga Tabela 5DB.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{C660DA53-3012-4D22-A7BD-240810713FB2}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Carga Tabela Ecommerce</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{51D20F3D-139C-48E8-906E-3AD4099D7013}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">1 Carga Tabela 5DB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">38</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AAC842E2-76D6-4C5C-BFA6-C153DC205905}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{1BB8049F-C103-4158-B5AA-72B1E42A1E56}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1161,7 +1162,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projetos\Udemy\ETL -SSIS\Projetos VS\Material Visual Studio\Vendas E-Commerce\Ordens.xlsx;Extended Properties="Excel 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projetos\Udemy\ETL -SSIS\Projetos VS\Material Visual Studio\Vendas E-Commerce\Ordens.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1429,6 +1430,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1991,6 +1994,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="2.Origem x Destino Excel.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{CEDB14D6-29A2-4F02-9834-D88E562FAB08}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{56151D11-D273-4EC3-BACA-DC615FCF614B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>

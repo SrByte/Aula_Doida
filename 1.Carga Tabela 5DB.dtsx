@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="EDMILSON"
   DTS:CreatorName="EDMILSON\edmil"
-  DTS:DTSID="{C660DA53-3012-4D22-A7BD-240810713FB2}"
+  DTS:DTSID="{51D20F3D-139C-48E8-906E-3AD4099D7013}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5685.2"
   DTS:LocaleID="1046"
-  DTS:ObjectName="Carga Tabela Ecommerce"
+  DTS:ObjectName="1 Carga Tabela 5DB"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{AAC842E2-76D6-4C5C-BFA6-C153DC205905}">
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{1BB8049F-C103-4158-B5AA-72B1E42A1E56}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -216,7 +216,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projetos\Udemy\ETL -SSIS\Projetos VS\Material Visual Studio\Vendas E-Commerce\Ordens.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projetos\Udemy\ETL -SSIS\Projetos VS\Material Visual Studio\Vendas E-Commerce\Ordens.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
