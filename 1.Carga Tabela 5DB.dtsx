@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="1 Carga Tabela 5DB"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{1BB8049F-C103-4158-B5AA-72B1E42A1E56}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{9D93D3FE-BE4B-4131-BD93-D57AF110C618}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -156,7 +156,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=Cusco;Initial Catalog=Categoria;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Carga Tabela Ecommerce-{BC5D8E11-32F2-4A98-823F-2640AF5A6EB3}Cusco.Categoria;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=Cusco;Initial Catalog=Categoria;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Carga Tabela Ecommerce-{BC5D8E11-32F2-4A98-823F-2640AF5A6EB3}Cusco.Categoria;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -174,13 +174,13 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[cusco.Itens]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{967B890D-0B61-46E9-80CB-E48FC10B80BE}"
+      DTS:DTSID="{6A71BAE4-9D69-41CB-88C6-2C4B5BCC12D4}"
       DTS:ObjectName="cusco.Itens">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=cusco;Initial Catalog=Itens;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Carga Tabela Ecommerce-{967B890D-0B61-46E9-80CB-E48FC10B80BE}cusco.Itens;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=cusco;Initial Catalog=Itens;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-1 Carga Tabela 5DB-{6A71BAE4-9D69-41CB-88C6-2C4B5BCC12D4}cusco.Itens;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -491,6 +491,13 @@
                           cachedName="id"
                           externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Categoria\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[Id]"
                           lineageId="Package\Sequencia Carga Ecommerce\Carga Categoria\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequencia Carga Ecommerce\Carga Categoria\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[name]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="name"
+                          externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Categoria\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[Nome]"
+                          lineageId="Package\Sequencia Carga Ecommerce\Carga Categoria\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[name]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -666,7 +673,6 @@
           DTS:refId="Package\Sequencia Carga Ecommerce\Carga clientes"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarefa Fluxo de Dados"
-          DTS:Disabled="True"
           DTS:DTSID="{35C25329-E990-42CB-B1A9-DD962D31D798}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
@@ -1714,7 +1720,7 @@
                     <property
                       dataType="System.String"
                       description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
-                      name="FastLoadOptions">TABLOCK</property>
+                      name="FastLoadOptions"></property>
                     <property
                       dataType="System.Int32"
                       description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
@@ -1742,6 +1748,30 @@
                           cachedName="id"
                           externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].ExternalColumns[Id]"
                           lineageId="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens.Outputs[Saída de Origem do Excel].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].Columns[order_id]"
+                          cachedDataType="r8"
+                          cachedName="order_id"
+                          externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].ExternalColumns[order_id]"
+                          lineageId="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens.Outputs[Saída de Origem do Excel].Columns[order_id]" />
+                        <inputColumn
+                          refId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].Columns[product_id]"
+                          cachedDataType="r8"
+                          cachedName="product_id"
+                          externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].ExternalColumns[product_id]"
+                          lineageId="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens.Outputs[Saída de Origem do Excel].Columns[product_id]" />
+                        <inputColumn
+                          refId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].Columns[quantity]"
+                          cachedDataType="r8"
+                          cachedName="quantity"
+                          externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].ExternalColumns[quantaty]"
+                          lineageId="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens.Outputs[Saída de Origem do Excel].Columns[quantity]" />
+                        <inputColumn
+                          refId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].Columns[total_price]"
+                          cachedDataType="r8"
+                          cachedName="total_price"
+                          externalMetadataColumnId="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce.Inputs[Entrada de Destino OLE DB].ExternalColumns[total_price]"
+                          lineageId="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens.Outputs[Saída de Origem do Excel].Columns[total_price]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2965,7 +2995,11 @@
     design-time-name="Package\Sequencia Carga Ecommerce\Carga clientes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="213.333333333334,42"
+          Id="Package\Sequencia Carga Ecommerce\Carga clientes\Origem de Arquivo Simples"
+          TopLeft="303,158" />
         <NodeLayout
           Size="158.666666666667,42"
           Id="Package\Sequencia Carga Ecommerce\Carga clientes\Destino OLE DB"
@@ -2974,10 +3008,6 @@
           Size="182,42"
           Id="Package\Sequencia Carga Ecommerce\Carga clientes\Conversão de Dados"
           TopLeft="82,275" />
-        <NodeLayout
-          Size="213.333333333334,42"
-          Id="Package\Sequencia Carga Ecommerce\Carga clientes\Origem de Arquivo Simples"
-          TopLeft="303,158" />
         <EdgeLayout
           Id="Package\Sequencia Carga Ecommerce\Carga clientes.Paths[Saída de Origem de Arquivo Simples]"
           TopLeft="409.5,200">
@@ -3009,7 +3039,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3043,7 +3075,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3068,13 +3102,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="178,42"
-          Id="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce"
-          TopLeft="395,334" />
-        <NodeLayout
           Size="157.333333333334,42"
           Id="Package\Sequencia Carga Ecommerce\Carga Itens\Origem do Itens"
           TopLeft="394,161" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Sequencia Carga Ecommerce\Carga Itens\Destino Ecommerce"
+          TopLeft="395,334" />
         <EdgeLayout
           Id="Package\Sequencia Carga Ecommerce\Carga Itens.Paths[Saída de Origem do Excel]"
           TopLeft="472.5,203">
@@ -3142,7 +3176,7 @@
     design-time-name="Package\Sequencia Carga Ecommerce\Carga ordens">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160,42"
           Id="Package\Sequencia Carga Ecommerce\Carga ordens\Origem do Excel"
@@ -3170,7 +3204,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3206,7 +3242,7 @@
     design-time-name="Package\Sequencia Carga Ecommerce\Carga Produto">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158.666666666667,42.6666666666667"
           Id="Package\Sequencia Carga Ecommerce\Carga Produto\Origem do Excel"
@@ -3234,7 +3270,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
